@@ -1,0 +1,132 @@
+/* General setup */
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0 auto;
+    min-width: 1000px;
+    max-width: 1400px;
+  }
+  
+  /* Layout */
+  
+  section {
+    float: left;
+    width: 50%;
+  }
+  
+  aside {
+    float: left;
+    width: 30%;
+  }
+  
+  nav {
+    float: left;
+    width: 20%;
+  }
+  
+  footer {
+    clear: both;
+  }
+  
+  header, section, aside, nav, footer {
+    padding: 20px;
+  }
+  
+  /* header and footer */
+  
+  header, footer {
+    border-top: 5px solid #a66;
+    border-bottom: 5px solid #a66;
+  }
+  
+  /* WRITE YOUR CODE BELOW HERE */
+
+  /*Typography */
+
+  /* locally hosted fonts*/
+  @font-face {
+    font-family: 'sinkin_sans400_regular';
+     src:url('SinkinSans-400Regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+  font-family: 'amblebold';
+       src:url('Amble-Bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+/* fonts and general text styling*/
+html {
+  font-size:10px;
+  
+}
+body {
+  font-family:'sinkin_sans100_thin_italic',sans-serif;
+  line-height:1.5;
+  letter-spacing:0.1rem;
+  
+}
+header {
+  font-family:'amblebold',sans-serif;
+  font-size:2rem;
+  text-align:center;
+  letter-spacing:0.2rem;
+}
+
+h2 {
+  font-size:1.5rem;
+  letter-spacing:0.15rem;
+}
+h2 + p {
+  text-indent:1.3rem;
+}
+
+/* Links*/
+ a:link{
+  color:#cf6ba9;
+  text-decoration: underline;
+  
+}
+
+ a:visited,
+ a:focus
+{
+  color:#8c4e4e;
+ text-decoration: none;
+}
+
+ a:hover{
+  color:#E11584;
+  text-decoration: none;
+ 
+}
+
+ a:active{
+ color:black;
+ text-shadow: #390c28;
+}
+
+ section p a {
+  background-image:url(/assets/external-link.svg);
+  background-repeat:no-repeat;
+  background-position:right;
+  padding:1.5rem;
+}
+/* lists*/
+nav {
+font-size:1.5rem;
+}
+nav li {
+  list-style-type:none;
+  font-size:2rem;
+  padding:7px;
+  display:inline-block;
+  border: 2px solid #a66;
+  margin:1.2rem;
+}
